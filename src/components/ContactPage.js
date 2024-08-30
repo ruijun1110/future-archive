@@ -43,7 +43,7 @@ const ContactPage = () => {
     return (
         <Container ref={containerRef}>
             <animated.div style={{ transform: props.xy.to(trans), position: 'relative' }}>
-                <AnimatedImage src="/img/disk.png" alt="Contact Image" onClick={handleClick}
+                <AnimatedImage src={process.env.PUBLIC_URL + "/img/disk.png"} alt="Contact Image" onClick={handleClick}
                     style={{ cursor: 'pointer' }} />
             </animated.div>
         </Container>

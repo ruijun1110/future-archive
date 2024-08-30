@@ -82,9 +82,9 @@ const ProjectCard = ({ title, dateRange, description, tags, mediaUrl, width, hei
                             />
                         ) :
                             mediaUrl?.endsWith('.mp4') ? (
-                                <Video src={mediaUrl} controls width={width} height={height} style={{ maxWidth: '100%', maxHeight: '100%' }} />
+                                <Video src={process.env.PUBLIC_URL + mediaUrl} controls width={width} height={height} style={{ maxWidth: '100%', maxHeight: '100%' }} />
                             ) : (
-                                <Image src={mediaUrl} alt={title} width={width} height={height} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                                <Image src={process.env.PUBLIC_URL + mediaUrl} alt={title} width={width} height={height} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
                             )}
                     </MediaArea>
                 </ContentArea>

@@ -80,7 +80,7 @@ const AboutPage = () => {
                     <br />
                     <span className="sidebar-title">I AM RAYMOND</span>
                 </SidebarHeader>
-                <AboutImg src='/img/about-pic.png' alt="about" />
+                <AboutImg src={process.env.PUBLIC_URL + '/img/about-pic.png'} alt="about" />
                 <div>
                     <SidebarStaticItem>
                         <ItemTitle>{"Table of Content"}</ItemTitle>

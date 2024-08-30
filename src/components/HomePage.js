@@ -7,14 +7,14 @@ import MediaCard from './MediaCard';
 
 // Image data array
 const images = [
-  { src: "/img/gray-folder.png", text: 'AI / ML' },
-  { src: '/img/blue-folder.png', text: 'MOBILE APP' },
-  { src: '/img/green-folder.png', text: 'WEB DEV' },
-  { src: "/img/gray-folder.png", text: 'OTHER' },
-  { src: '/img/blue-folder.png', text: 'UI/UX' },
-  { src: '/img/green-folder.png', text: 'MARKETING' },
-  { src: "/img/gray-folder.png", text: 'VIDEOS' },
-  { src: '/img/blue-folder.png', text: 'GRAPHICS' },
+  { src: `${process.env.PUBLIC_URL}/img/gray-folder.png`, text: 'AI / ML' },
+  { src: `${process.env.PUBLIC_URL}/img/blue-folder.png`, text: 'MOBILE APP' },
+  { src: `${process.env.PUBLIC_URL}/img/green-folder.png`, text: 'WEB DEV' },
+  { src: `${process.env.PUBLIC_URL}/img/gray-folder.png`, text: 'OTHER' },
+  { src: `${process.env.PUBLIC_URL}/img/blue-folder.png`, text: 'UI/UX' },
+  { src: `${process.env.PUBLIC_URL}/img/green-folder.png`, text: 'MARKETING' },
+  { src: `${process.env.PUBLIC_URL}/img/gray-folder.png`, text: 'VIDEOS' },
+  { src: `${process.env.PUBLIC_URL}/img/blue-folder.png`, text: 'GRAPHICS' },
 ];
 
 const projectGroups = [
