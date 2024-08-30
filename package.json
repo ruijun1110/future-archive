@@ -15,10 +15,9 @@
     "styled-components": "^6.1.9",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://ruijun1110.github.io/future-archive/",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && mv build docs",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
