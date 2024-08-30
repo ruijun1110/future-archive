@@ -55,7 +55,7 @@ const VideoCard = ({ projectName, toolName, mediaUrl, width, height, hasNext, ha
                         ) : isVideo ? (
                             <Video src={process.env.PUBLIC_URL + mediaUrl} controls width={width} height={height} style={{ objectFit: 'contain' }} />
                         ) : (
-                            <Image src={mediaUrl} alt={projectName} width={width} height={height} style={{ objectFit: 'contain' }} />
+                            <Image src={process.env.PUBLIC_URL + mediaUrl} alt={projectName} width={width} height={height} style={{ objectFit: 'contain' }} />
                         )}
                     </MediaContent>
                     <NavButton right onClick={onNext} disabled={!hasNext}>{">"}</NavButton>
