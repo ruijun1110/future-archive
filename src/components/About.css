@@ -1,0 +1,183 @@
+.container {
+    display: flex;
+    height: 95vh; /* Full viewport height */
+    font-size: 2.4em;
+  }
+  .content {
+    flex: 1; /* Equal width */
+    overflow-y: auto; /* Adds scroll bar when content overflows */
+  }
+  
+  .sidebar {
+    flex: 1;
+    background-color: #ebebeb;
+    font-family: "Familjen Grotesk", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+
+  .sidebar-header{
+    padding-bottom: 20px;
+    margin-left: 30px;
+    font-size: 1.5em;
+    font-family: "Unbounded", sans-serif;
+    text-align: start;
+    position: relative;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-top: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .sidebar-static-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-top: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+  }
+  
+  .item-number {
+    margin-right: 30px; /* Space between the number and the title */
+    font-weight: bold;
+  }
+  
+  .item-title {
+    text-align: left;
+  }
+  
+  .sidebar-item:hover, .sidebar-item.active {
+    background-color: #cccccc;
+  }
+  
+  .content {
+    padding: 20px;
+    background-color: #fff;
+    font-family: "Familjen Grotesk", sans-serif;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-family: "Victor Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+.about-text {
+    width: 80%;
+    text-align:start;
+    line-height: 1.5;
+    position: relative;
+    font-size: 0.5em;
+}
+
+.about-title {
+    text-align: start;
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    /* background-color: black; */
+    color: black;
+}
+
+.text-overlay {
+    /* display: inline; */
+    position: relative;
+    /* z-index: 100; */
+    padding: 0 5px;
+    text-indent: 30px;
+    font-weight: bold;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure the row takes the full width */
+    max-width: 800px; /* Adjust as necessary to control the max width */
+}
+
+.skills-section {
+    width: 45%; /* Adjust as necessary */
+}
+
+.skills-bold {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin: 0;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    max-width: 350px; /* Adjust as necessary */
+    margin: 0px auto 10px auto; /* Center the image and add spacing */
+    display: block;
+}
+
+
+.internship-section {
+    margin-bottom: 20px;
+}
+
+.internship-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.position-title {
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 0.7em;
+}
+
+.internship-period {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.7em;
+    margin-bottom: 10px;
+}
+
+.internship-achievements {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.line-breaker {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 20px 0;
+}
