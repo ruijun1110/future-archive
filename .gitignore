@@ -4,6 +4,8 @@
 # Production build
 /build
 
+/docs/videos
+
 /public/videos
 
 # Environment variables
