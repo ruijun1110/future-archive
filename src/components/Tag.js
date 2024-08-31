@@ -35,7 +35,7 @@ const TagContainer = styled.div`
 `;
 
 const Tag = ({ text, color, variant, githubUrl }) => {
-  const isGithub = text.toLowerCase() === 'github';
+  const isGithub = text.toLowerCase() === 'learn more';
 
   const handleClick = () => {
     if (isGithub) {
